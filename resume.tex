@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+% \usepackage{plex-otf}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Christian W. Sigmon} \\ \vspace{1pt}
+    \small 540-583-6440 $|$ \href{mailto:cws@glasket.com}{\underline{cws@glasket.com}} $|$ 
+    \href{https://glasket.com}{\underline{glasket.com}} $|$
+    \href{https://github.com/glasket}{\underline{github.com/glasket}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Virginia Commonwealth University}{Richmond, VA}
+      {Bachelor of Science in Computer Science}{Aug. 2015 -- May 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Contract Development}{July 2020 -- Present}
+      {Temper, LLC}{Bedford, VA}
+      \resumeItemListStart
+        \resumeItem{Worked with local small businesses on website and application development}
+        \resumeItem{Helped to plan for future development and maintenance of applications}
+        \resumeItem{Provided guidance on hosting and deployment of applications}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PHP Developer}{July 2020 -- Jan. 2023}
+      {Teachade}{Bedford, VA - Remote}
+      \resumeItemListStart
+        \resumeItem{Redesigned a custom PHP website's UI to reflect modern design principles}
+        \resumeItem{Worked to migrate the codebase from PHP 5.4 to 7.4}
+        \resumeItem{Used Docker to develop locally, while deploying to bare-metal Linode servers using SSH}
+        \resumeItem{Development was done as an individual, taking suggestions from the CEO}
+        \resumeItem{Worked alongside an independent server administrator for server maintenance and configuration}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{Jan. 2022 -- May 2022}
+      {Squid Dogs Games}{Bedford, VA - Remote}
+      \resumeItemListStart
+        \resumeItem{Developed a Web3.0 marketplace using React and Solidity on the Ethereum blockchain}
+        \resumeItem{Wrote a white paper detailing the organization and operation of the marketplace}
+        \resumeItem{Developed an exchange website to allow customers to exchange in-game items for cryptocurrency}
+        \resumeItem{Used C\# with Azure Functions to handle the exchange API}
+        \resumeItem{Collaborated with other teams to specify the requirements for the exchange API}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Capstone Internship}{Oct. 2018 -- May 2019}
+      {Ippon Technologies}{Richmond, VA}
+      \resumeItemListStart
+        \resumeItem{Developed a full-stack survey web application using Angular, Java Spring, and PostgreSQL}
+        \resumeItem{Worked on a team of 3 individuals using Agile methodology}
+        \resumeItem{Designed a technical presentation displaying the features of the application}
+        \resumeItem{Implemented features based on guidance from a project lead employed by Ippon}
+        \resumeItem{Develpment involved rapidly learning about modern web design and development}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Key Giveaway} $|$ \emph{Go, React, AWS SAM, DynamoDB, Docker}}{Jan. 2023 -- June 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application to give away Steam game keys}
+            \resumeItem{Implemented a serverless REST API using AWS SAM and Go for handling entries}
+            \resumeItem{Implemented a React frontend to display the giveaways and allow users to enter}
+            \resumeItem{Created a CLI application for handling the creation of giveaways}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{OpenAutomotive} $|$ \emph{C\#, Blazor, PostgreSQL, Docker}}{June 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing a full-stack automotive CRM web application for a local business}
+            \resumeItem{Iterative design based on approximately 1 year of prior work}
+            \resumeItem{Focused on ease of use for non-technical users}
+            \resumeItem{Designed a database schema to encompass multiple business needs, such as inventory and sales}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C\#, Go, JavaScript, TypeScript, Python, PHP, HTML/CSS, PostgreSQL} \\
+     \textbf{Frameworks}{: React, Node.js, Gin, ASP.NET} \\
+     \textbf{Developer Tools}{: Git, Docker, AWS, VS Code, Visual Studio, JetBrains Rider} \\
+     \textbf{Design}{: GIMP, Illustrator, Inkscape, Blender, Draw.io} \\
+     \textbf{Other}{: UML, Database Design, Technical Writing, Linux, Windows}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

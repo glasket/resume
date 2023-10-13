@@ -1,0 +1,6 @@
+*
+!/.gitignore
+!.github/**
+!resume.tex
+!.vscode/settings.json
+!*/
